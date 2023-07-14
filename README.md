@@ -1,4 +1,6 @@
-# homebridge-sengled-bulbs (Beta)
+# homebridge-sengled-bulbs
+
+Note: I am trying to get this to work with my Sendled light strips and implement MQtt
 
 An unoffical [Homebridge](https://github.com/nfarina/homebridge) platform plugin for Sengled accessories.
 
