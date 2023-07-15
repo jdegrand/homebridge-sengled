@@ -1,6 +1,6 @@
-# homebridge-sengled-bulbs
+# homebridge-sengleds
 
-Note: I am trying to get this to work with my Sendled light strips and implement MQtt
+Note: I am trying to get this to work with my Sendled light strips and implement MQTT support
 
 An unoffical [Homebridge](https://github.com/nfarina/homebridge) platform plugin for Sengled accessories.
 
@@ -17,7 +17,7 @@ If you encounter anything out of this product. Issue and Pull Request is welcome
 # Installation
 
 1. Install homebridge using: `npm install -g homebridge`
-2. Install this plugin using: `npm install -g homebridge-sengled-bulbs`
+2. Install this plugin using: `npm install -g homebridge-sengleds`
 3. Update your configuration file. See below for a sample.
 
 # Configuration

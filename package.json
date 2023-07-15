@@ -1,5 +1,5 @@
 {
-  "name": "homebridge-sengled-bulbs",
+  "name": "homebridge-sengleds",
   "version": "0.0.6",
   "description": "A unoffical Homebridge plugin for controlling sengled accessories.",
   "main": "index.js",
@@ -8,12 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/sammy1881/homebridge-sengled-bulbs.git"
+    "url": "git://github.com/jdegrand/homebridge-sengleds.git"
   },
   "bugs": {
-    "url": "https://github.com/sammy1881/homebridge-sengled-bulbs/issues"
+    "url": "https://github.com/jdegrand/homebridge-sengleds/issues"
   },
-  "devDependencies": {},
   "engines": {
     "node": ">=6.9.2",
     "homebridge": ">=0.2.0"
@@ -22,6 +21,7 @@
     "axios": "^0.21.4",
     "axios-cookiejar-support": "^1.0.1",
     "moment": "^2.29.1",
+    "mqtt": "^4.3.7",
     "tough-cookie": "^4.0.0"
   },
   "keywords": [
@@ -34,7 +34,7 @@
   ],
   "author": "Sachin Pathak",
   "license": "MIT",
-  "homepage": "https://github.com/sammy1881/homebridge-sengled-bulbs#readme",
+  "homepage": "https://github.com/jdegrand/homebridge-sengleds#readme",
   "directories": {
     "lib": "lib"
   }

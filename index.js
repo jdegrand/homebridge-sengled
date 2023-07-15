@@ -10,7 +10,7 @@ module.exports = function(homebridge) {
 	Characteristic = homebridge.hap.Characteristic;
 	UUIDGen = homebridge.hap.uuid;
 
-	homebridge.registerPlatform("homebridge-sengled-bulbs", "SengledHub", SengledHubPlatform);
+	homebridge.registerPlatform("homebridge-sengleds", "SengledHub", SengledHubPlatform);
 };
 
 function SengledHubPlatform(log, config, api) {
@@ -159,7 +159,7 @@ SengledHubPlatform.prototype.addAccessory = function(data) {
 	sengledLightAccessory.BindAndUpdateAccessory(data);
 
 	this.api.registerPlatformAccessories(
-		'homebridge-sengled-bulbs',
+		'homebridge-sengleds',
 		'SengledHub',
 		[newAccessory]);
 
@@ -184,7 +184,7 @@ SengledHubPlatform.prototype.removeAccessory = function(accessory, accessoryId =
 		if (this.debug) this.log("Removing accessory", id);
 
 		try {
-			this.api.unregisterPlatformAccessories("homebridge-sengled-bulbs", "SengledHub", [accessory]);
+			this.api.unregisterPlatformAccessories("homebridge-sengleds", "SengledHub", [accessory]);
 		} catch (error) {
 			// in case its already been deregistered, don't crash. remove from plugin's accessories context below
 		}
